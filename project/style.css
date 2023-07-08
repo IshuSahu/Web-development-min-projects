@@ -1,0 +1,283 @@
+/* header */
+header{
+   background: url('clothing/header\ body.jpg') no-repeat center center/cover;
+   width: 100%;
+   height: 500px;
+
+   
+}
+/* header::before{
+    content: "";
+    background-color: lightskyblue;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+} */
+
+nav{
+  display: inline-block;
+    
+   /* background-color: rgba(110, 180, 39, 0.212); */
+   width: 100%;
+   height: 50px;
+}
+
+.logo{
+    float: left;
+    position: fixed;
+    margin: -25px 8px 2px 3px;
+}
+.logo > img{
+    height: 100px;
+    width: 100px;
+}
+
+/* navigartion bar */
+
+.navigation > ul{
+    position: fixed;
+    display: block;
+    margin: 10px 193px 15px 147px;
+    padding: 1px;
+}
+.navigation ul li{
+    display: inline-block;
+    list-style: none;
+    width: 100px;
+    margin: 4px 0px 5px 4px;
+    padding: 2px;
+}
+.navigation ul li a{
+    
+    text-decoration: none;
+    text-align: center;
+    /* border: 2px solid black; */
+    border-radius: 1px;
+    background-color: rgba(222, 255, 190, 0.199);
+    color: black;
+    margin: 6px 3px 2px 4px;
+    padding: 4px 14px 4px 12px;
+   
+}
+.navigation ul li a:hover{
+    background-color: rgba(48, 47, 10, 0.315);
+}
+
+.menu{
+    float: right;
+    margin: 5px 13px 0px 2px;
+    padding: 0px;
+}
+.menu input{
+    text-align: center;
+    font-size: 14px;
+    /* border-radius: 15px; */
+    background-color: rgb(222, 255, 190);
+    margin: 3px 3px 2px 4px;
+    padding: 7px 3px 7px 1px;
+}
+.menu input:hover{
+    background-color: white;
+}
+/* heading  */
+.heading {
+    font-family: 'Alkalami', serif;
+    
+}
+.heading h1{
+    margin: 47px 20px -3px 36px;
+    font-size: 80px;
+    padding: 9px 3px 7px 7px;
+    color: #a67c00;
+}
+.heading h2{
+    font-style: italic;
+    position: relative;
+    color: rgb(26, 118, 238);
+    margin: -28px 3px 3px 0px;
+    padding: 0px 3px 3px 58px;
+    font-size: 50px;
+    /* animation: anima 2s ease-in 1s infinite backwards; */
+    /* transition: all 3s ease-in-out .5s; */
+}
+/* .heading h2:hover{
+    font-size: 30px ;
+} */
+
+/* for animation */
+@keyframes anima{
+    from{
+        left:-50px;
+    }
+    to{
+        left: 150px;
+    }
+   
+}
+
+.heading h2 span{
+    color: red
+}
+
+.now-more ul li{
+     
+    display: inline-block;
+    list-style: none;
+    width: 110px;
+    margin: 3px 3px 8px 15px;
+}
+.now-more ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 1px;
+    background-color: #cddc39;
+    color: black;
+    /* margin: 35px 3px 2px 4px; */
+    padding: 4px 14px 4px 12px;
+   
+}
+.now-more ul li a:hover{
+    background-color: #53eee1;
+    
+}
+
+/* section  */
+section h1{
+    font-family: 'Alkalami', serif;
+    text-align: center;   
+    margin: auto;
+}
+.list{
+    display: block;
+}
+.box{
+    display: inline-block;
+    background-color: rgb(255 106 183);
+    border: 2px solid rgb(151 47 232);
+    border-radius: 6px;
+    width: 31%;
+    margin: 5px;
+    padding: 5px;
+    height: 400px;
+}
+.box h2{
+    text-align: center;
+    
+   
+}
+.box img{
+    float: right;
+    width: 162px;
+    height: 245px;
+    margin: 32px 0px -5px 0px;
+}
+.box ul{
+    margin: -79px 14px;
+    padding: 64px 3px;
+}
+.box ul li{
+    font-weight: bold;
+    margin: 16px 3px;
+    padding: 6px 9px;
+
+}
+
+/* clothing brand */
+.brand{
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+}
+.brand h1{
+    font-family: 'Alkalami', serif;
+    text-align: center;   
+    margin: auto;
+    padding: auto;
+}
+.brand img{
+    height: 600px;
+    width: 100%;
+    margin: -196px 5px -209px -43px;
+
+}
+/* services */
+.contact{
+    display: block;
+    margin: 0px 2px 5px 18px;
+    padding: 3px 0px 2px 2px;
+}
+.contact h1{
+    font-family: 'Alkalami', serif;
+    text-align: center;   
+    margin: auto;
+    padding: auto;
+   
+}
+.contact h2{
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin: 19px 25px 14px 61px;
+    padding: -2px 0px 4px 2px;
+}
+.service_box{
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: #ab9c84;
+    width: 29%;
+    height: 170px;
+    margin: 5px 20px 5px 21px;
+    padding: 4px;
+}
+.service_box:hover{
+  background-color: rgba(0, 114, 9, 0.815);
+}
+.service_box img{
+    float: left;
+    width: 108px;
+    height: 108px;
+    margin: 44px 5px 2px 2px;
+    padding: 6px 2px 2px 2px;
+}
+.service_box p{
+    float: right;
+    font-size: 18px;
+    margin: -90px 5px 2px 127px;
+
+}
+/* //details */
+
+.details{
+    display: block;
+    background-color:rgb(242 177 141);
+}
+
+.details_box{
+    display: inline-block;
+    border: 1px;
+    width: 20%;
+    height: 300px;
+    margin: 36px 12px 19px 12px;
+    padding: 18px;
+}
+.details_box:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.details_box li{
+    list-style: none;
+    margin: 3px 12px;
+    padding: 5px 13px;
+}
+.details_box li a{
+   text-decoration: none;
+   color: black;
+}
+.details_box li a:hover{
+   text-decoration:underline;
+   
+}

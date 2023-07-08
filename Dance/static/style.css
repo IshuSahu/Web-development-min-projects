@@ -1,0 +1,141 @@
+#navbar{
+    background-color: #19282b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 21px, 14px;
+    margin: 2px 0px 2px 0px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin: -7px 0px -3px 0px;
+    padding: 15px 2px 15px 2px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0px 14px;
+    font-size: 22px;
+}
+#logo img{
+    height: 42px;
+    filter: invert(1);
+}
+#navbar li{
+    list-style: none;
+    margin: 2px 21px;
+    padding: 2px 2px;
+}
+#navbar li a{ 
+    text-decoration: none;
+    border: 2px solid gray;
+    padding: 6px 16px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+}
+#navbar li a:hover{
+    background-color: #8b9384; 
+    color: black; 
+}
+
+#introSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Passion One', cursive;
+    background: url(https://images.unsplash.com/photo-1547106510-6aec13ee41ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat center center/cover;
+    background-position-y: -296px;
+    font-size: 55px;
+    align-items: center;
+    height: 425px;
+
+}
+
+#introSection div.small{
+    font-size: 42px;
+    padding: 5px;
+}
+
+#missionSection{
+    height: 326px;
+    width: 85%;
+    margin: auto;
+}
+
+#missionSection h2{
+    font-size: 36px;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    margin: 3px 4px 3px 4px;
+
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px 14px;
+    height: 227px;
+    background-color: lightblue;
+}
+.card h3{
+    text-align: center;
+    margin: 11px 12px;
+    font-family: 'Quantico', sans-serif;}
+
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    padding: 3px 4px;
+}
+.card-img img{
+    height: 94px;
+    margin: 5px 0px 48px 0px;
+    padding: 0px 14px;
+}
+.card-content p{
+    margin: 16px -7px;
+    font-size: 17px;
+}
+#sponsorsSection{
+    height: 300px;
+    background-color: #fbd6d6c7;    
+    
+}
+#sponsorsSection h2{
+    font-size: 32px;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    margin: 3px 4px 3px 4px;      
+}
+.sponcers{
+   display: block;
+   margin: 2px 2px 2px 2px;
+   padding: 2px 2px 2px 2px;
+}
+.sponcers img {
+    height: 277px;
+    width: 65%;
+    margin: -9px 2px 2px 184px;
+    padding: 2px 7px 2px 2px;
+
+}
+#footer{
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+}

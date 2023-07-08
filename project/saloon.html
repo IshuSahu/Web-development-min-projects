@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloon</title>
+    <style>
+        /* hr tag ko dekhna hai 
+      header text ko bhi dekhna hai 
+      sevice ke liche bhi text dena ahi */
+        header {
+            background: url('image/pexels-delbeautybox-853427.jpg') no-repeat center center/cover;
+            z-index: -1;
+            opacity: 1.5;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .navbar {
+
+            border-radius: 7px;
+
+        }
+
+        .navbar ul {
+            display: block;
+            /* position: sticky; */
+            padding: 1px 13px 38px 24px;
+            margin: 1px 0px 38px 0px;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 36px;
+
+        }
+
+        .navbar li a {
+
+            background-color: lightcyan;
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 10px -11px 0px -7px;
+            padding: 9px;
+
+        }
+
+        .left {
+            float: left;
+        }
+
+        .left img {
+            filter: invert(100%);
+            height: 113px;
+            width: 113px;
+        }
+
+        .right {
+            float: right;
+            margin: 13px;
+        }
+
+        .right input {
+            color: black;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        header h1 {
+            font-size: 44px;
+            color: #000000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        header p {
+            color: #ffe6e6;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            margin: 89px;
+            font-size: 21px;
+        }
+
+        hr {
+            color: black;
+        }
+
+
+        .service {
+            display: inline-block;
+        }
+
+        .service h1 {
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid black;
+            width: 31%;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .box h1 {
+            font-size: 22px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            text-align: center;
+        }
+
+        .box img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .contact {
+            display: inline-block;
+            background: url(https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+            height: 312px;
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        .contact div {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact h1 {
+            color: white;
+            text-align: left;
+            font-size: 27px;
+            margin: 0px 0px 0px 202px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .details {
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 195px;
+            padding: 10px;
+
+        }
+
+        .details input {
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 7px;
+            font-size: 15px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .submit {
+            margin-left: 355px
+        }
+
+        .submit input {
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: rgb(199, 166, 166);
+            color: black;
+            font-size: 20px;
+            width: 141px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <div class="left">
+                    <img src="image/download-removebg-preview.png" alt="">
+                </div>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact Us</a></li>
+                <div class="right">
+                    <input type="search" name="search" id="search" placeholder="search">
+                </div>
+            </ul>
+        </nav>
+        <h1>Welcome To Urban Gabru saloon!</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis cupiditate quaerat at animi culpa
+            odit maxime commodi mollitia ad quas magnam libero quisquam, id dolore architecto error. Rem ea asperiores
+            eius vel omnis quidem voluptas pariatur eveniet ullam dolor inventore, nostrum similique atque doloremque.
+            Reprehenderit impedit aliquid beatae similique.</p>
+        <hr>
+    </header>
+    <div class="service">
+        <h1>Our Services </h1>
+        <div class="box">
+            <h1>Deep Tissue Massage</h1>
+            <img src="image/Deep tisue masage sallon.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, iure exercitationem. Hic sunt soluta
+                possimus sint voluptatem dolor maiores nostrum.</p>
+
+        </div>
+        <div class="box">
+            <h1>Hair Spa</h1>
+            <img src="image/Harirspa.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, iure exercitationem. Hic sunt soluta
+                possimus sint voluptatem dolor maiores nostrum.</p>
+
+        </div>
+        <div class="box">
+            <h1>Grooming</h1>
+            <img src="image/hair cutin saloon.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, iure exercitationem. Hic sunt soluta
+                possimus sint voluptatem dolor maiores nostrum.</p>
+
+        </div>
+    </div>
+    <section class="contact">
+        <div class="heading">
+            <h1>Register Now</h1>
+        </div>
+        <div class="details">
+            Name: <input type="text" name="Name" placeholder="Enter your name">
+        </div>
+        <div class="details">
+            Email: <input type="Email" placeholder="Enter your Email">
+        </div>
+        <div class="details">
+            Phone no:<input type="number" placeholder="Enter your number">
+        </div>
+        <div class="details">
+            Booking date:<input type="date" placeholder="Booking Date">
+        </div>
+        <div class="submit">
+            <input type="submit" placeholder="Register">
+        </div>
+    </section>
+
+</body>
+
+</html>

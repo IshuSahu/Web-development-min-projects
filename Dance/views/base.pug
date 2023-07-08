@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Chitru's Dance Acedemy
+    block scripts
+      script(src='/index.js')
+    block style
+  body
+    block content
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/Image/3.png")
+                    | CDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+  footer#footer
+        | copyright © 2022 ChitrusDanceAcedemy.com All right reserved

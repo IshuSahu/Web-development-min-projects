@@ -1,0 +1,10 @@
+
+
+
+
+
+/* section  */
+.member{
+    display: flex;
+    flex-direction: column;
+}

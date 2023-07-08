@@ -1,0 +1,213 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variable */
+:root{
+    --navbar-height:45px;
+}
+
+/* naviagation bar  */
+#navbar{
+    position: absolute;
+    /* yo fix all things on naviagtion line  */
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+
+/*naviagation bar: logo and image  */
+#logo{
+    margin: -22px 0px;
+}
+#logo img{
+    height: 61px;
+    margin: 30px 10px;
+
+}
+
+/*naviagation bar: List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";  
+    background-color: black;  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+}
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 604px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+/* to add background we use pseudo selctor  */
+#home::before{
+    content: "";  
+    background:url(image/bg1.jpg) no-repeat center center/cover;  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+#home p{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+/* services center*/
+#services{
+    margin: 5px;
+    display: flex;
+    /* flex-direction: column; */
+}
+#services .box{
+    border: 2px solid darkgrey;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 50px;
+    background-color: lightgoldenrodyellow;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: 2px 100px;
+}
+#services{}
+#services{}
+#services{}
+
+/* clients section  */
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('image/bg2.jpg') no-repeat center center/cover;
+   width: 100%;
+   height: 51%;
+   z-index: -1;
+   opacity: .7;
+}
+#client-section h1{
+    color: #efefef;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 269px;
+}
+#client-item{
+    padding: 40px;
+
+}
+/* Contact section  */
+
+.contact{
+    position: relative;
+}
+.contact{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('image/contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 19px;
+    color: black;
+    font-family:'Baloo Bhai 2', cursive;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: -3px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+    
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: #643c00;
+    color: white;
+    margin: 17px;
+    font-size: 14px;
+    border-radius: 13px;
+    /* to make cusor pointer ! */
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}

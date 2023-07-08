@@ -1,0 +1,54 @@
+doctype html
+html
+  head 
+    tite  Chitru's Dance Acedemy
+    style
+      include ../static/style.css
+    //-   link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Passion+One&family=Patua+One&family=Quantico:ital@1&display=swap" rel="stylesheet"
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/Image/3.png")
+                | CDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    section#introSection
+        div Welcome to Chitru's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.card 
+            h3 Our Alumini
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Image/1.png", alt="")
+                div.card-content 
+                    p adipisicing elit. Dicta delectus sit, a culpa assumenda voluptatibus tenetur dolor blanditiis accusantium quam debitis error eaque dignissimos! Architecto dicta rem ducimus quis natus?
+
+        div.card 
+            h3 Our Achivments
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Image/2.png", alt="")
+                div.card-content 
+                    p adipisicing elit. Dicta delectus sit, a culpa assumenda voluptatibus tenetur dolor blanditiis accusantium quam debitis error eaque dignissimos! Architecto dicta rem ducimus quis natus?
+        div.card 
+            h3 Dance the way u like
+        
+            div.card-box 
+                div.card-img
+                    img(src="/static/Image/4.png", alt="")
+                div.card-content 
+                    p adipisicing elit. Dicta delectus sit, a culpa assumenda voluptatibus tenetur dolor blanditiis accusantium quam debitis error eaque dignissimos! Architecto dicta rem ducimus quis natus?
+    section#sponsorsSection
+        h2 Our Sponsors
+        div.sponcers 
+            img(src="/static/Image/clint2.png", alt="")
+    footer#footer
+        | copyright © 2022 ChitrusDanceAcedemy.com All right reserved
+    script
+      include ../static/index.js

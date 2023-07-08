@@ -1,0 +1,197 @@
+header{
+    background: url('https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80')no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.315) ;
+}
+header::before{
+   background-color: rgba(0, 0, 0, 0.123);
+   z-index: -1;
+   opacity: 0.8;
+}
+
+.logo{
+    display: block;
+    height: 80px;
+    width: 100px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+
+}
+.logo img{
+    filter: invert(100%);
+    height: 50px;
+    width: 50px;
+    margin: 8px 22px -7px 19px;
+}
+.logo p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 3px 0px;
+}
+nav{
+    display: block;
+    margin: -77px 5px 5px 84px;
+}
+nav ul> li{
+    display: inline-block;
+    list-style: none;
+    margin: 7px 7px;
+    padding: 5px 5px;
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(223 0 0 / 82%);
+    color: #fafafad9;
+    font-weight: bold;
+    /* border: 2px solid black; */
+    border-radius: 9px;
+    margin: 3px 22px 0px 16px;
+    padding: 8px 20px 7px 20px;
+}
+nav ul li a:hover{
+    /* background-color: rgba(0, 0, 0, 0.205); */
+    color: black;
+}
+.header{
+    display: block;
+    text-align: center;
+    margin: 67px 9px 128px 9px;
+    padding: 20px 5px 20px 5px;
+    
+}
+.header h1{
+    color: whitesmoke;
+    font-size: 80px;
+}
+.header h1 span{
+    color: red;
+    
+}
+.header h2{
+    color: whitesmoke;
+    font-size: 49px;
+    margin: -37px 2px 52px 2px;
+}
+.header a{
+    background-color: #d30c0c00;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 3px 22px 0px 16px;
+    padding: 13px 24px 13px 21px;
+}
+.header a:hover{
+   background-color: rgba(0, 0, 0, 0.199);
+}
+/* section  */
+section{
+    display: block;
+}
+.left{
+    float: left;
+}
+.left img{
+    height: 640px;
+    width: 515px;
+}
+.right {
+    float: right;
+    width: 59%;
+    margin: -2px 0px 0px 0px;
+    padding: 0px;
+}
+.box{
+    float: right;
+    margin: 5px 36px 5px 5px;
+    padding: 0px 0px;
+
+}
+.box:hover{
+   background-color: rgba(0, 0, 0, 0.075);
+}
+.box h1{
+    font-size: 35px;
+    color: rgb(255, 86, 86);
+    font-family: cursive;
+    margin: 0px 1px;
+    padding: 4px 0px;
+}
+.box p{
+    font-size: 17px;
+    font-family: system-ui;
+    margin: 0px 3px;
+    font-weight: 600;
+    line-height: 34px;
+    padding: 0px 4px;
+}
+
+.member{
+    background: url(https://images.unsplash.com/photo-1434596922112-19c563067271?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat center center/cover;
+    height: 412px;
+    background-position-y: -278px;
+    width: 100%;
+    margin-top: 678px;
+}
+.box_member{
+    margin: -36px 22px 0px -74px;
+    padding: 110px 24px 13px 1px;
+    line-height: 64px;
+}
+.box_member >h1{
+    display: block;
+    color: whitesmoke;
+    font-size: 34px;
+    margin: -34px 2px 12px 677px;
+}
+.box_member h1 span{
+    color: red;
+    margin: 0px 2px 52px -2px;
+}
+.box_member a{
+    background-color: #d30c0c00;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 3px 22px 0px 680px;
+    padding: 13px 24px 13px 21px;
+}
+.box_member a:hover{
+   background-color: rgba(255, 255, 255, 0.514);
+   color: black;
+}
+
+.footer{
+    background-color: rgb(77, 77, 77);
+    display: block;
+}
+.contact{
+    display: inline-block;
+    margin: 0px 40px 22px 39px;
+    padding: 0px 2px 2px 2px;
+    height: 21%;
+    width: 25%;
+}
+
+.social{
+    display: inline-block;
+    margin: 61px 6px;
+}
+.social img{
+    height: 50px;
+    width: 50px;
+    margin: -1px 3px;
+}
+.social img:hover{
+    background-color: rgba(0, 0, 0, 0.116);
+}
