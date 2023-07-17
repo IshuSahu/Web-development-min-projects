@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="game-container">
+    <h2>Number Guessing Game</h2>
+    <p id="result">Guess a number between 1 and 100:</p>
+    <input type="number" id="user-input" min="1" max="100">
+    <button id="guess-button" onclick="checkGuess()">Check</button>
+  </div>
+
+  <script>
+    let number = 0;
+    let nguess = 1;
+    let highestScore = Infinity;
+
+    function getRandomNumber() {
+      number = Math.floor(Math.random() * 100) + 1;
+      nguess = 1;
+    }
+
+    function checkGuess() {
+      const guessInput = parseInt(document.getElementById('user-input').value);
+      if (isNaN(guessInput) || guessInput < 1 || guessInput > 100) {
+        alert('Please enter a valid number between 1 and 100.');
+        return;
+      }
+
+      if (guessInput > number) {
+        setMessage('Lower number please.');
+      } else if (guessInput < number) {
+        setMessage('Higher number please.');
+      } else {  
+        setMessage(`Congratulations! You guessed the number in ${nguess} attempts.`);
+        if (nguess < highestScore) {
+          highestScore = nguess;
+          displayHighestScore();
+        }
+        getRandomNumber(); 
+      }
+      nguess++;
+      document.getElementById('user-input').value = '';
+    }
+
+  
+    function setMessage(message) {
+      document.getElementById('result').innerText = message;
+    }
+
+    // Function to display the highest score
+    function displayHighestScore() {
+      document.getElementById('result').innerText += ` Your new highest score is ${highestScore} attempts.`;
+    }
+
+    // Initialize the game with the first random number
+    getRandomNumber();
+  </script>
+</body>
+
+</html>
