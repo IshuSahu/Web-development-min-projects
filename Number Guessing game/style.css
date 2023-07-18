@@ -13,8 +13,9 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
-  background-color: #222;
-  /* background-color: #60b347; */
+  /* background-color: #222;
+  background-color: #60b347; */
+  background: url('https://images.unsplash.com/photo-1673825495120-76de8651ff0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80' ) center center ;
   display: flex;
   justify-content: center;
   align-items: center;
