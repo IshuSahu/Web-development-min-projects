@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
+}
+/* Utility */
+.line-break {
+  height: 0.5rem;
+  background-color: rgb(60 60 60);
+}
+body {
+  background-color: black;
+  color: white;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/header-image.png);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 8%;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+nav .left {
+  height: 3rem;
+  cursor: pointer;
+}
+.right {
+  display: flex;
+  gap: 1.5em;
+}
+.rg-btn {
+  height: 5vh;
+  width: 6vw;
+  background-color: #ec0101;
+  border: 2px solid black;
+  border-radius: 10%;
+  font-weight: bold;
+  color: white;
+}
+.language-btn {
+  width: 8vw;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0.1px solid white;
+  padding: 7px 20px;
+  gap: 1em;
+}
+.signup-btn:hover{
+    background-color: #b90606d8;
+}
+.language-btn img {
+  height: 0.3em;
+  width: 0.5em;
+}
+
+.header-content {
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10%;
+}
+.header-content h1 {
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.header-content h3 {
+  font-size: 1.4rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.header-content h5 {
+  font-size: 1.2rem;
+  font-family: Verdana;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.email-signup {
+  display: inline-flex;
+  /* overflow: hidden */
+}
+.email-signup input {
+  width: 28vw;
+  height: 8vh;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 7px 20px;
+  border-radius: 5px;
+  color: blue;
+  font-size: 1em;
+  font-weight: 600;
+}
+.email-signup button {
+  margin-left: 1.3rem;
+  width: 15vw;
+  color: white;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: #ec0101;
+  border-radius: 0.3em;
+  padding: 7px 20px;
+}
+.email-signup button:hover {
+    background-color: #b90606d8;
+}
+.feature {
+  height: 80vh;
+  padding: 2rem 10rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding: 2rem 0;
+}
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+}
+.text-col h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
+}
+.text-col h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.img-col {
+  flex-basis: 50%;
+}
+.img-col img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+/* ************************FAQ */
+.faq {
+  padding: 1em 12%;
+  text-align: center;
+  font-size: 1.5em;
+}
+.faq h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  margin: 1em;
+}
+
+.accordion {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 950px;
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 0.1em;
+}
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 0.6em;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  background-color: #303030;
+  margin-bottom: 0.1em;
+  cursor: pointer;
+  position: relative;
+}
+label::after {
+  content: "+";
+  font-size: 3rem;
+  position: absolute;
+  right: 0.5em;
+  transition: transform 0.5s; /* Updated transition duration */
+}
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  background: #303030;
+  text-align: left;
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+
+/* When we click on content it should */
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 60em;
+  padding: 1em 0.5em;
+}
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.faq .email-signup {
+  max-width: 150rem;
+  margin: 1.5rem 0;
+  font-size: large;
+}
+
+.footer-details {
+  height: 70vh;
+  padding: 40px 9% 15px;
+}
+.footer-details h5 {
+  font-size: large;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 1em 1em;
+  color: rgb(184, 184, 184);
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.detail-1 {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 1em;
+}
+
+.list-style {
+  list-style: none;
+  margin-bottom: 1em;
+}
+.list-style a {
+  font-size: large;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 1em 1em;
+  color: rgb(184, 184, 184);
+}
+.footer-lang-btn {
+  width: 8vw;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(46, 46, 46, 0.527);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 7px 20px;
+  gap: 1em;
+  margin: 1em 1em;
+}
+.footer-lang-btn img {
+  height: 0.3em;
+  width: 0.5em;
+}
+
+.footer-details p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: large;
+  font-weight: 400;
+  margin: 1em 1em;
+  color: rgb(184, 184, 184);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+   body{
+    width: 108%;
+   }
+  .header {
+    padding: 1.5rem 5%;
+    height: 76vh;
+  }
+  nav {
+    padding: 0 0rem;
+  }
+  nav .left {
+    height: 1.6rem;
+  }
+  .right {
+    gap: 0.5em;
+  }
+  .language-btn {
+    width: 21vw;
+    padding: 1px 6px;
+    gap: 0.5em;
+  }
+  .rg-btn {
+    width: 20vw;
+    border-radius: 12%;
+  }
+  .header-content {
+    padding: 2%;
+  }
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+  .header-content h3 {
+    font-size: 1.1rem;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 1rem;
+  }
+  .header-content h5 {
+    font-size: 1.3rem;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .email-signup {
+    display: block;
+    /* overflow: hidden; */
+  }
+  .email-signup input {
+    width: 75vw;
+    height: 6vh;
+  }
+  .email-signup button {
+    margin-top: 1rem;
+    width: 45vw;
+    font-size: 1.2rem;
+  }
+
+  /* Freature */
+  .feature {
+    height: 78vh;
+    padding: 0.5rem 1rem;
+  }
+  .row {
+    display: flex;
+    padding: 1.5rem 0;
+    flex-direction: column;
+  }
+  .text-col h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+    margin: 0.2em;
+  }
+
+  .text-col h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .faq {
+    padding: 0em 6%;
+    font-size: 0.9em;
+}
+.footer-details {
+    height: 100vh;
+    padding: 13px 3% 15px 9%;
+}
+.details {
+    display: inline-block;
+    justify-content: space-evenly;
+}
+.list-style a {
+    font-size: medium;
+    margin: 0em 0em;
+}
+.footer-lang-btn {
+    width: 30vw;
+}
+.footer-details p {
+    font-size: medium;
+    font-weight: 400;
+    margin: 0em 6em;
+    padding: 1rem;
+}
+}
